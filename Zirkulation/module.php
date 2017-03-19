@@ -49,10 +49,10 @@ class Zirkulation extends IPSModule
     * Die folgenden Funktionen stehen automatisch zur VerfÃ¼gung, wenn das Modul Ã¼ber die "Module Control" eingefÃ¼gt wurden.
     * Die Funktionen werden, mit dem selbst eingerichteten Prefix, in PHP und JSON-RPC wiefolgt zur VerfÃ¼gung gestellt:
     *
-    * ABC_MeineErsteEigeneFunktion($id);
+    * _MeineErsteEigeneFunktion($id);
     *
     */
-    public function MeineErsteEigeneFunktion() {
+    public function Check_Time() {
         // Selbsterstellter Code
 
 		echo "TOll gemacht!";
