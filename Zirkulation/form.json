@@ -1,7 +1,7 @@
 {
   "elements":
   [
-	{ "type": "Label", "label": "Variable der Zirkulationspumpe (z.B. STATE bei Homematic" },
+	{ "type": "Label", "label": "Variable der Zirkulationspumpe (z.B. STATE bei Homematic)" },
 	{ "type": "SelectVariable", "name": "PumpID", "caption": "Pumpe" },
 
 	{ "type": "Label", "label": "Für wie lange soll die Pumpe eingeschaltet werden?" },
@@ -29,6 +29,6 @@
 	{ "type": "ValidationTextBox", "name": "ToTime", "caption": "Bis (z.B. 22:10)" },
 
 	{ "type": "Label", "label": "ID des Webfronts für Benachrichtigung" },
-	{ "type": "SelectInstance", "name": "WebfrontID", "caption": "Webfront"}
+	{ "type": "SelectInstance", "name": "WebfrontID", "caption": "Webfront-Instanz"}
   ]
 }
