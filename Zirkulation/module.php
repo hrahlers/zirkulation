@@ -40,8 +40,12 @@ class Zirkulation extends IPSModule
         // Diese Zeile nicht löschen
         parent::ApplyChanges();
 
-		$source_variable 	= $this->ReadPropertyInteger("sourceid");
-		$webfront 			= $this->ReadPropertyInteger("webfrontid");
+		$pumpID 		= $this->ReadPropertyInteger("PumpID", 0);
+		$DurationTime 	= $this->ReadPropertyInteger("DurationTime", 0);
+		$BreakTime 	= $this->ReadPropertyInteger("BreakTime", 0);
+		$FromTime 		= $this->ReadPropertyInteger("FromTime", 0);
+		$ToTime 		= $this->ReadPropertyInteger("ToTime", 0);
+		$WebfrontID 	= $this->ReadPropertyInteger("WebfrontID", 0);
 
 	    }
 
@@ -52,11 +56,15 @@ class Zirkulation extends IPSModule
     * _MeineErsteEigeneFunktion($id);
     *
     */
-    public function Check_Time() {
-        // Selbsterstellter Code
+   
+	public function Check_Time() 
+		{
+        	// Selbsterstellter Code
 
-		echo "TOll gemacht!";
-    }
+		echo "Toll gemacht!\n";
+		echo "Hier die Werte aus dem Moduleigenschaften:\n";
+		}
+
 }
 
 ?>
