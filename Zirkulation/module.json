@@ -1,14 +1,14 @@
 {
     "id": "{DE42EA47-3D65-4E44-ABBC-28185A303F10}",
-    "name": "Testmodul",
+    "name": "Zirkulation",
     "type": 3,
     "vendor": "Andreas seine Firma",
     "aliases": 
     [
-        "Testmodul"
+        "Zirkulation"
     ],
     "parentRequirements": [],
     "childRequirements": [],
     "implemented": [],
-    "prefix": "TMHA"
+    "prefix": "ZIRKU"
 }

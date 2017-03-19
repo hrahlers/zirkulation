@@ -1,7 +1,7 @@
 <?
 
 // Klassendefinition
-class Testmodul extends IPSModule 
+class Zirkulation extends IPSModule 
 	{
 
 
