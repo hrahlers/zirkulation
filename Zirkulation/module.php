@@ -21,16 +21,16 @@ class Zirkulation extends IPSModule
         // Diese Zeile nicht löschen.
         parent::Create();
 
+		$this->RegisterPropertyInteger("PumpID", 0);
+		$this->RegisterPropertyInteger("DurationTime", 0);
+		$this->RegisterPropertyInteger("BreakTime", 0);
+		$this->RegisterPropertyInteger("FromTime", 0);
+		$this->RegisterPropertyInteger("ToTime", 0);
+		$this->RegisterPropertyInteger("WebfrontID", 0);
 
-		$this->RegisterPropertyInteger("sourceid", 0);
-		$this->RegisterPropertyInteger("webfrontid", 0);
-
-
-		$this->RegisterVariableInteger("Timestamp", "letzte Änderung", "~UnixTimestamp");
-		$this->RegisterVariableBoolean("Push", "Meldung versendet", "");
 
 		//Timer
-		$this->RegisterTimer("CheckIfDoneTimer", 0, 'FM_CheckEvent($_IPS[\'TARGET\'], "Done");');
+		//$this->RegisterTimer("CheckIfDoneTimer", 0, 'FM_CheckEvent($_IPS[\'TARGET\'], "Done");');
 
 	    }
 
