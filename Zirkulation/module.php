@@ -22,10 +22,10 @@ class Zirkulation extends IPSModule
         parent::Create();
 
 		$this->RegisterPropertyInteger("PumpID", 0);
-		$this->RegisterPropertyInteger("DurationTime", 0);
-		$this->RegisterPropertyInteger("BreakTime", 0);
-		$this->RegisterPropertyInteger("FromTime", 0);
-		$this->RegisterPropertyInteger("ToTime", 0);
+		$this->RegisterPropertyInteger("DurationTime", 1);
+		$this->RegisterPropertyInteger("BreakTime", 1);
+		$this->RegisterPropertyString("FromTime", "06:00");
+		$this->RegisterPropertyString("ToTime", "21:00");
 		$this->RegisterPropertyInteger("WebfrontID", 0);
 
 
@@ -40,12 +40,12 @@ class Zirkulation extends IPSModule
         // Diese Zeile nicht löschen
         parent::ApplyChanges();
 
-		$pumpID 		= $this->ReadPropertyInteger("PumpID", 0);
-		$DurationTime 	= $this->ReadPropertyInteger("DurationTime", 0);
-		$BreakTime 	= $this->ReadPropertyInteger("BreakTime", 0);
-		$FromTime 		= $this->ReadPropertyInteger("FromTime", 0);
-		$ToTime 		= $this->ReadPropertyInteger("ToTime", 0);
-		$WebfrontID 	= $this->ReadPropertyInteger("WebfrontID", 0);
+		$pumpID 		= $this->ReadPropertyInteger("PumpID");
+		$DurationTime 	= $this->ReadPropertyInteger("DurationTime");
+		$BreakTime 	= $this->ReadPropertyInteger("BreakTime");
+		$FromTime 		= $this->ReadPropertyInteger("FromTime");
+		$ToTime 		= $this->ReadPropertyInteger("ToTime");
+		$WebfrontID 	= $this->ReadPropertyInteger("WebfrontID");
 
 	    }
 
