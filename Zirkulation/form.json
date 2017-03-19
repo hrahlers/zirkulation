@@ -1,0 +1,34 @@
+{
+  "elements":
+  [
+	{ "type": "Label", "label": "Variable der Zirkulationspumpe (z.B. STATE bei Homematic" },
+	{ "type": "SelectVariable", "name": "PumpID", "caption": "Pumpe" },
+
+	{ "type": "Label", "label": "Für wie lange soll die Pumpe eingeschaltet werden?" },
+	{ "type": "Select", "name": "DurationTime", "caption": "Einschaltdauer", "options": 
+			[
+			{ "label": "1 Minute", "value": 1 },
+			{ "label": "2 Minuten", "value": 2 },
+			{ "label": "5 Minuten", "value": 5 },
+			{ "label": "10 Minuten", "value": 10 },
+			{ "label": "15 Minuten", "value": 15 },
+			]},
+
+	{ "type": "Label", "label": "Pause zwichen den Umwälzungen" },
+	{ "type": "Select", "name": "BreakTime", "caption": "Pause", "options": 
+			[
+			{ "label": "1 Minute", "value": 1 },
+			{ "label": "2 Minuten", "value": 2 },
+			{ "label": "5 Minuten", "value": 5 },
+			{ "label": "10 Minuten", "value": 10 },
+			{ "label": "15 Minuten", "value": 15 },
+			]},
+
+	{ "type": "Label", "label": "In welchem Zeitfenster kann die Pumpe aktiv werden?" },
+	{ "type": "ValidationTextBox", "name": "FromTime", "caption": "Von (z.B. 12:30)" },
+	{ "type": "ValidationTextBox", "name": "ToTime", "caption": "Bis (z.B. 22:10)" },
+
+	{ "type": "Label", "label": "ID des Webfronts für Benachrichtigung" },
+	{ "type": "SelectInstance", "name": "WebfrontID", "caption": "Webfront"}
+  ]
+}
